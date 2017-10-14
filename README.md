@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/MagicJHC10/Proyecto-IV.svg?branch=master)](https://travis-ci.org/MagicJHC10/Proyecto-IV)
+
 # Repositorio para el proyecto de IV
 
 Directorio para entrega del proyecto de la asignatura de IV.
