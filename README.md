@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/MagicJHC10/Proyecto-IV.svg?branch=master)](https://travis-ci.org/MagicJHC10/Proyecto-IV)
-
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 # Repositorio para el proyecto de IV
 
 Directorio para entrega del proyecto de la asignatura de IV.
