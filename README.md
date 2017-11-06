@@ -8,7 +8,7 @@ He leido algo sobre Scraping de paginas web y he decidido realizar el proyecto d
 
 El bot de telegram, irá sobre Clash Royale, el juego de estrategia,multijugador en tiempo real que esta batiendo todos los records.Nos permitirá conocer estadisticas de personajes, puntos fuertes, counters etc...
 
-A día de hoy ya tiene dos funcionalidades:
+A día de hoy tiene dos funcionalidades:
 
 -Mostrar un mensaje de saludo al usuario.
 
