@@ -35,4 +35,4 @@ A continuación , tenemos que configurar github y heroku para que se enlacen y c
 
 Además, para el correcto funcionamiento, de un archivo para el json, me he creado un archivo Procfile, cuyo contenido es el [siguiente](https://github.com/MagicJHC10/ProyectoIV/blob/master/Procfile).
 
-El enlace de la aplicación desplegada es [despliegue](https://clashroyaleivbot.herokuapp.com/)
+Despliegue https://clashroyaleivbot.herokuapp.com/
