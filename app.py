@@ -11,8 +11,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def func():
-    mensaje = {"status": "OK"}
-    return json.dumps(mensaje)
+    data = {"status": "OK"}
+    return json.dumps(data)
 
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))
