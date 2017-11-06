@@ -6,7 +6,7 @@ from flask_restful import Resource, Api
 app = Flask(__name__)
 
 {
-   "status": "Funciona correctamente"
+   "status": "OK"
 }
 
 @app.route("/")
