@@ -1,3 +1,6 @@
 beautifulsoup4==4.5.1
 pyTelegramBotAPI==3.2.1
 html5lib==0.999999999
+gunicorn==19.7.1
+Flask==0.11.1
+Flask-RESTful==0.3.6
