@@ -10,7 +10,7 @@ El bot de telegram, irá sobre Clash Royale, el juego de estrategia,multijugador
 
 A día de hoy ya tiene dos funcionalidades:
 
--Mostrar un mensaje de saludo
+-Mostrar un mensaje de saludo al usuario.
 
 -Mostrar las cartas disponibles del juego.
 # Integración continua
