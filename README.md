@@ -49,7 +49,7 @@ Tras esto vamos a crear nuestro repositorio aportando nuestros datos, como vemos
 
 Para que todo funcione debemos crear un archivo Dockerfile, el cual ya esta en este mismo repositorio. De esta forma cuando hagamos push de nuestro archivo Dockerfile , la construcción del proyecto se realizará automaticamente en docker:
 
-![img](https://github.com/MagicJHC10/Proyecto-IV/blob/master/capturas/traspushdockerfile.png)
+![img](https://github.com/MagicJHC10/Proyecto-IV/blob/master/capturas/traspushdedockerfile.png)
 
 Una vez hecho esto, se puede hacer pull del repositorio con docker pull magicjhc10/proyecto-iv y ejecutarlo con sudo docker run -e "TOKEN=MI_TOKEN" -i -t magicjhc10/proyecto-iv y si todo va bien aparecerá algo así:
 
