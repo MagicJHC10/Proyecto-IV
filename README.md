@@ -51,7 +51,7 @@ Para que todo funcione debemos crear un archivo Dockerfile, el cual ya esta en e
 
 ![img](https://github.com/MagicJHC10/Proyecto-IV/blob/master/capturas/traspushdedockerfile.png)
 
-Una vez hecho esto, se puede hacer pull del repositorio con docker pull magicjhc10/proyecto-iv y ejecutarlo con sudo docker run -e "TOKEN=MI_TOKEN" -i -t magicjhc10/proyecto-iv y si todo va bien aparecerá algo así:
+Una vez hecho esto, se puede hacer pull del repositorio con:docker pull magicjhc10/proyecto-iv y ejecutarlo con sudo docker run -e "TOKEN=MI_TOKEN" -i -t magicjhc10/proyecto-iv y si todo va bien aparecerá algo así:
 
 ![img](https://github.com/MagicJHC10/Proyecto-IV/blob/master/capturas/rundocker.png)
 
