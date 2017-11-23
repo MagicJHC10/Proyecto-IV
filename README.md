@@ -36,3 +36,30 @@ A continuación , tenemos que configurar github y heroku para que se enlacen y c
 Además, para el correcto funcionamiento, de un archivo para el json, me he creado un archivo Procfile, cuyo contenido es el [siguiente](https://github.com/MagicJHC10/ProyectoIV/blob/master/Procfile).
 
 Despliegue https://clashroyaleivbot.herokuapp.com/
+
+# Despliegue en Docker
+ 
+Para realizar el despliegue nos tenemos que dar de alta en la pagina de [docker](https://hub.docker.com/) y pulsar "create automated build". Tras esto autorizamos a github y nos saldra algo asi:
+
+![img](https://github.com/MagicJHC10/Proyecto-IV/blob/master/capturas/githubenlazadoadocker.png)
+
+Tras esto vamos a crear nuestro repositorio aportando nuestros datos, como vemos a continuación:
+
+![img](https://github.com/MagicJHC10/Proyecto-IV/blob/master/capturas/creandorepositoriodocker.png)
+
+Para que todo funcione debemos crear un archivo Dockerfile, el cual ya esta en este mismo repositorio. De esta forma cuando hagamos push de nuestro archivo Dockerfile , la construcción del proyecto se realizará automaticamente en docker:
+
+![img](https://github.com/MagicJHC10/Proyecto-IV/blob/master/capturas/traspushdockerfile.png)
+
+Una vez hecho esto, se puede hacer pull del repositorio con docker pull magicjhc10/proyecto-iv y ejecutarlo con sudo docker run -e "TOKEN=MI_TOKEN" -i -t magicjhc10/proyecto-iv y si todo va bien aparecerá algo así:
+
+![img](https://github.com/MagicJHC10/Proyecto-IV/blob/master/capturas/rundocker.png)
+
+Enlace del repositorio en Docker Hub: https://hub.docker.com/r/magicjhc10/proyecto-iv/
+
+Para desplegar el contenedor en zeit simplemente nos instalamos now y ejecutamos: now -e "TOKEN=MI_TOKEN" -e , en el directorio donde tenemos el Dockerfile y automaticamente se desplegará:
+
+URL: https://proyecto-iv-dezvoxwmjh.now.sh/
+
+
+
