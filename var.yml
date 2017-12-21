@@ -1,0 +1,14 @@
+
+---
+
+# Variables para el despliegue
+project_name: Proyecto-IV
+project_repo: https://github.com/MagicJHC10/Proyecto-IV.git
+proyect_path: clashroyaleivbot
+
+# Dependencias del sistema
+system_packages:
+  - build-essential
+  - npm
+  - nodejs-legacy
+  - git
