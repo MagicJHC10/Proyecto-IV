@@ -12,7 +12,7 @@ Vagrant.configure('2') do |config|
     # configuration needed for Azure
     azure.tenant_id = '8c330b7f-76ef-449c-983b-294ff925b9cd'
     azure.client_id = 'ebab5eb4-c3d5-46e0-893b-34638ef78cbb'
-    azure.client_secret = '27936058A4909F60662F3EC8E26FF4B3BF075508'
+    azure.client_secret = 'upWEVHF8wq1Nor32HtuJ96G3BB+hOmWVA/9/BeDTaC0='
     azure.subscription_id = '37160be2-7b11-4655-bdfe-44715bbb400a'
   end
 
