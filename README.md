@@ -94,7 +94,7 @@ Una vez creada, necesitamos cierta información que nos proporciona Azure, para 
 - AZURE_TENANT_ID
 - AZURE_SUBSCRIPTION_ID
 
-Quedando el fichero [así](https://github.com/MagicJHC10/Proyecto-IV/blob/master/Vagranfile).
+Quedando el fichero [así](https://github.com/MagicJHC10/Proyecto-IV/blob/master/Vagrantfile).
 
 Por último creamos la maquina virtual con:
 
