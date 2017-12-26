@@ -29,8 +29,8 @@
 
   - name: Clonar GitHub
     become: yes
-    git: repo=https://github.com/MagicJHC10/Proyecto-IV  dest=~/AplicacionIV/ clone=yes force=yes
+    git: repo=https://github.com/MagicJHC10/Proyecto-IV  dest=~/Proyecto-IV/ clone=yes force=yes
 
   - name: Instalar requirements
     become: yes
-command: pip install -r home/Proyecto-IV/requirements.txt
+command: pip install -r ~/Proyecto-IV/requirements.txt
