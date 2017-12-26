@@ -9,7 +9,7 @@ def servicios():
     run('cd ./Proyecto-IV && sudo chmod +x script.sh', pty=False)
     run('cd ./Proyecto-IV && sudo sh script.sh', pty=False)
 
-def borrado():
+def borrar():
 	run('sudo rm -rf ./Proyecto-IV')
 
 def killPython():
