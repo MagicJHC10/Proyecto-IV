@@ -14,11 +14,12 @@ Vagrant.configure('2') do |config|
     azure.client_id = 'ebab5eb4-c3d5-46e0-893b-34638ef78cbb'
     azure.client_secret = 'upWEVHF8wq1Nor32HtuJ96G3BB+hOmWVA/9/BeDTaC0='
     azure.subscription_id = '37160be2-7b11-4655-bdfe-44715bbb400a'
+    azure.vm_size = "Standard_DS2_v2"
   end
 
   # configuration of ansible
   config.vm.provision :ansible do |ansible|
-    	ansible.playbook = "provision/ansible.yml"
+    	ansible.playbook = "ansible.yml"
   end
 
 end
