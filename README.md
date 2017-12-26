@@ -108,5 +108,5 @@ Instalamos Fabric y configuramos el fichero fabfile.py, quedando [así](https://
 Y ya debería funcionar, todo correctamente.
 
 
-Despliegue final: http://clashbot.westus.cloudapp.azure.com/
+Despliegue final: clashbot.westus.cloudapp.azure.com/
 
