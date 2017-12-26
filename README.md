@@ -59,7 +59,7 @@ Enlace del repositorio en Docker Hub: https://hub.docker.com/r/magicjhc10/proyec
 
 Para desplegar el contenedor en zeit simplemente nos instalamos now y ejecutamos: now -e "TOKEN=MI_TOKEN" -e , en el directorio donde tenemos el Dockerfile y automaticamente se desplegará:
 
-URL: https://proyecto-iv-dezvoxwmjh.now.sh/
+Contenedor: https://proyecto-iv-dezvoxwmjh.now.sh/
 
 # Diseño del soporte virtual para el despliegue de una aplicación
 
