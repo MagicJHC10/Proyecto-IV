@@ -33,4 +33,4 @@
 
   - name: Instalar requirements
     become: yes
-command: pip install -r home/AplicacionIV/Proyecto-IV/requirements.txt
+command: pip install -r home/Proyecto-IV/requirements.txt
