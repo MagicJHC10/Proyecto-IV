@@ -13,4 +13,4 @@ def borrado():
 	run('sudo rm -rf ./Proyecto-IV')
 
 def killPython():
-run('sudo pkill python')
+	run('sudo pkill python')
