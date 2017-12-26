@@ -61,5 +61,52 @@ Para desplegar el contenedor en zeit simplemente nos instalamos now y ejecutamos
 
 URL: https://proyecto-iv-dezvoxwmjh.now.sh/
 
+# Diseño del soporte virtual para el despliegue de una aplicación
 
+En este apartado, donde debemos desplegar la aplicacion en un laaS, he usado Vagrant, que se encargará de desplegar una máquina virtual creada en Azure, con los pases que el profesor proporcionó al inicio de la asignatura.
+
+Lo primero que tenemos que hacer es instalar Vagrant y Ansible
+
+```bash
+$  sudo dpkg -i vagrant_2.0.1_x86_64.deb 
+```
+
+```bash
+$  vagrant plugin install vagrant-azure
+```
+
+```bash
+$ sudo apt-get install ansible
+
+```
+
+Luego debemos configurar el archivo var.yml que se quedaría [así](https://github.com/MagicJHC10/Proyecto-IV/blob/master/var.yml).
+A continuación, configurar el archivo ansible.yml , que clonará nuestro repositorio, instalará dependencias etc, [ansible.yml](https://github.com/MagicJHC10/Proyecto-IV/blob/master/ansible.yml).
+
+Para evitar algunos errores durante el provisionamiento he configurado [ansible.cfg](https://github.com/MagicJHC10/Proyecto-IV/blob/master/ansible.cfg).
+
+Luego debemos configurar azure para conseguir que nos proporcione un fichero (.cer), el cual será nuestro certificado y que subiremos a la cuenta de Azure para poder registrar nuestra aplicación en Azure.
+
+Una vez creada, necesitamos cierta información que nos proporciona Azure, para poder configurar nuestro archivo Vagrantfile, como:
+
+- AZURE_CLIENT_ID
+- AZURE_CLIENT_SECRET
+- AZURE_TENANT_ID
+- AZURE_SUBSCRIPTION_ID
+
+Quedando el fichero [así](https://github.com/MagicJHC10/Proyecto-IV/blob/master/Vagranfile).
+
+Por último creamos la maquina virtual con:
+
+```bash
+$ vagrant up --provider=azure
+
+```
+
+Instalamos Fabric y configuramos el fichero fabfile.py, quedando [así](https://github.com/MagicJHC10/Proyecto-IV/blob/master/despliegue/fabfile.py).
+
+Y ya debería funcionar, todo correctamente.
+
+
+URL: http://clashbot.westus.cloudapp.azure.com/
 
